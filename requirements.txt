@@ -1,10 +1,14 @@
-streamlit>=1.28.1
-python-dotenv>=1.0.0
-PyPDF2>=3.0.1
-langchain
-faiss-cpu
-sentence-transformers
-transformers
-torch
-altair>=4.2.2
-numpy
+streamlit==1.18.1
+python-dotenv==1.0.0
+PyPDF2==3.0.1
+langchain==0.0.184
+langchain-text-splitters==0.0.1  # Downgrade this to avoid pydantic conflict
+faiss-cpu==1.12.0  # Use newer version for Python 3.13
+sentence-transformers==2.2.2
+transformers==4.29.0
+torch==2.9.0  # Use latest for Python 3.13 compatibility
+torchvision==0.24.0
+huggingface-hub==0.13.4
+numpy==1.26.4
+pydantic==1.10.9
+altair==4.2.2  # Compatible version with Streamlit
