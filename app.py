@@ -33,7 +33,7 @@ from langchain.llms import HuggingFacePipeline
 
 load_dotenv()  # loads .env locally
 
-HF_TOKEN = st.secrets["HF_TOKEN"]
+HF_TOKEN = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = HF_TOKEN
 
 # reading raw text from the pdf
