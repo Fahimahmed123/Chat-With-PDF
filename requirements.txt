@@ -24,7 +24,7 @@ hf-xet==1.1.10
 httpcore==1.0.9
 httpx==0.28.1
 httpx-sse==0.4.3
-huggingface-hub==0.13.4
+huggingface-hub==0.33.4
 idna==3.11
 importlib_metadata==8.7.0
 InstructorEmbedding==1.0.1
@@ -105,7 +105,7 @@ sympy==1.14.0
 tenacity==8.5.0
 threadpoolctl==3.6.0
 tiktoken==0.4.0
-tokenizers==0.13.3
+tokenizers==0.19.1
 toml==0.10.2
 toolz==1.0.0
 torch==2.9.0

@@ -1,7 +1,7 @@
 import streamlit as st
 from dotenv import load_dotenv
 
-
+import os
 from htmlTemplets import css, bot_template, user_template
 
 #reading pdf text
@@ -31,6 +31,9 @@ from langchain.llms import HuggingFacePipeline
 
 
 
+load_dotenv()  # loads .env locally
+
+HF_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN") or st.secrets.get("HUGGINGFACEHUB_API_TOKEN")
 
 
 # reading raw text from the pdf
@@ -102,7 +105,7 @@ def handle_user_input(user_question):
 
 
 def main():
-    load_dotenv()
+    # load_dotenv()
     st.set_page_config(page_title="Chat with multiple PDFs",
                        page_icon=":books:")
     
